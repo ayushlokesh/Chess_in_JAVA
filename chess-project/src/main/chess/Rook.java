@@ -30,18 +30,16 @@ class Rook extends Piece{
 		{if (i0 == i1){
 			if (j1 > j0){
 				for (int j = j0+1; j < j1; j++){
-					if (pathClear)
-						pathClear = (!Board.hasPiece(i1, j));
-					else
+					pathClear = (!Board.hasPiece(i1, j));
+							if (!pathClear)
 					    return false;
 				}
 				return true;
 			}
 			else {
 				for (int j = j0-1; j > j1; j--){
-					if (pathClear)
-						pathClear = (!Board.hasPiece(i1, j));
-					else
+					pathClear = (!Board.hasPiece(i1, j));
+							if (!pathClear)
 					    return false; 
 				}
 				return true;
@@ -53,18 +51,16 @@ class Rook extends Piece{
 			else if (j0 == j1){
 				if (i1 > i0){
 					for (int i = i0+1; i < i1; i++){
-						if (pathClear)
-							pathClear = (!Board.hasPiece(i, j1));
-						else
+						pathClear = (!Board.hasPiece(i, j1));
+							if (!pathClear)
 							return false;
 					}
 					return true;
 				}
 				else {
 					for (int i = i0-1; i > i1; i--){
-						if (pathClear)
-							pathClear = (!Board.hasPiece(i, j1));
-						else
+						pathClear = (!Board.hasPiece(i, j1));
+							if (!pathClear)
 							return false; 
 					}
 					return true;

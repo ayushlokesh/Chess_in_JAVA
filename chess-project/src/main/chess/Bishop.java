@@ -37,9 +37,8 @@ public class Bishop extends Piece{
 
 			if (difJ > 0 && difJ==difI){
 				for (int j = j0+1, i = i0+1; j < j1 && i < i1; i++,j++){
-					if (pathClear)
-						pathClear = (!Board.hasPiece(i, j));
-					else
+					pathClear = (!Board.hasPiece(i, j));
+							if (!pathClear)
 					    return false;
 				}
 				return true;
@@ -47,9 +46,8 @@ public class Bishop extends Piece{
 
 			else if (difJ < 0 && (-1)*difJ==difI){
 				for (int j = j0-1, i = i0+1; j > j1 && i < i1; i++,j--){
-					if (pathClear)
-						pathClear = (!Board.hasPiece(i, j));
-					else
+					pathClear = (!Board.hasPiece(i, j));
+							if (!pathClear)
 					    return false;
 				}
 				return true;
@@ -61,9 +59,8 @@ public class Bishop extends Piece{
 
 			if (j1 - j0 > 0 && (-1)*difI==difJ){
 				for (int j = j0+1, i = i0-1; j < j1 && i > i1; i--,j++){
-					if (pathClear)
-						pathClear = (!Board.hasPiece(i, j));
-					else
+					pathClear = (!Board.hasPiece(i, j));
+							if (!pathClear)
 					    return false;
 				}
 				return true;
@@ -71,9 +68,8 @@ public class Bishop extends Piece{
 
 			else if (difJ < 0 && difJ==difI){
 				for (int j = j0-1, i = i0-1; j > j1 && i > i1; i--,j--){
-					if (pathClear)
-						pathClear = (!Board.hasPiece(i, j));
-					else
+					pathClear = (!Board.hasPiece(i, j));
+							if (!pathClear)
 					    return false;
 				}
 				return true;
