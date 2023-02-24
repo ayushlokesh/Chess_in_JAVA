@@ -1,6 +1,6 @@
 package chess;
 
-class Knight extends Piece{
+public class Knight extends Piece{
 	private PieceColour colour;
 	private String symbol;
 
