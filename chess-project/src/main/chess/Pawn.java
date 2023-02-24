@@ -29,14 +29,14 @@ public class Pawn extends Piece{
 
 		if (!Board.hasPiece(i1, j1) && j0 == j1){
 			
-			if ( (((i0 == 6 && (i1 == 4)) || (i1 == i0-1)) && !isBlack)
-			 || (((i0 == 1 && (i1 == 3)) || (i1 == i0+1)) && isBlack))
+			if ( (((i0 == 6 && (i1 == 4)) || (i1 == (i0-1))) && !isBlack)
+			 || (((i0 == 1 && (i1 == 3)) || (i1 == (i0+1))) && isBlack))
 			 return true;
 
 		}
 
 		else if (Board.hasPiece(i1, j1) && (Board.getPiece(i1, j1).getColour() != this.colour)
-			    &&((j0 - j1) == 1) || ((j0 - j1) == -1)){
+			    && (((j0 - j1) == 1) || ((j0 - j1) == -1))){
 
 			if (((i1 - i0) == -1 && !isBlack) 
 			    || ((i1 - i0) == 1 && isBlack))
@@ -45,8 +45,6 @@ public class Pawn extends Piece{
 			}
 
 		
-		
-		// else
 			return false;
 	}
 }
