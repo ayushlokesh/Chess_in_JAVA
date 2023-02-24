@@ -4,7 +4,7 @@ class Pawn extends Piece{
 	private PieceColour colour;
 	private String symbol;
 
-	Pawn(PieceColour pc){
+	public Pawn(PieceColour pc){
 		if (pc.equals(PieceColour.WHITE)){
 			this.colour=PieceColour.WHITE;
 			this.symbol="♙";

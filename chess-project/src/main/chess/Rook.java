@@ -4,7 +4,7 @@ class Rook extends Piece{
 	private PieceColour colour;
 	private String symbol;
 
-	Rook(PieceColour pc){
+	public Rook(PieceColour pc){
 		if (pc.equals(PieceColour.WHITE)){
 			this.colour=PieceColour.WHITE;
 			this.symbol="♖";

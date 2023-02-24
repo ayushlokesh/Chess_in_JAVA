@@ -4,7 +4,7 @@ class King extends Piece{
 	private PieceColour colour;
 	private String symbol;
 
-	King(PieceColour pc){
+	public King(PieceColour pc){
 		if (pc.equals(PieceColour.WHITE)){
 			this.colour=PieceColour.WHITE;
 			this.symbol="♔";
