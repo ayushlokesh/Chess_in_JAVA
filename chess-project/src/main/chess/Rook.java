@@ -25,7 +25,7 @@ class Rook extends Piece{
 	public boolean isLegitMove(int i0, int j0, int i1, int j1) {
 		boolean pathClear = true;
 		
-		if ((Board.hasPiece(i1, j1) && (Board.getPiece(i1, j1).colour != this.colour)) 
+		if ((Board.hasPiece(i1, j1) && (Board.getPiece(i1, j1).getColour() != this.colour)) 
 		    || !Board.hasPiece(i1, j1))
 		{if (i0 == i1){
 			if (j1 > j0){

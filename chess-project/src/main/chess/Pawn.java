@@ -35,7 +35,7 @@ class Pawn extends Piece{
 
 		}
 
-		else if (Board.hasPiece(i1, j1) && (Board.getPiece(i1, j1).colour != this.colour)
+		else if (Board.hasPiece(i1, j1) && (Board.getPiece(i1, j1).getColour() != this.colour)
 			    &&((j0 - j1) == 1) || ((j0 - j1) == -1)){
 
 			if (((i1 - i0) == -1 && !isBlack) 

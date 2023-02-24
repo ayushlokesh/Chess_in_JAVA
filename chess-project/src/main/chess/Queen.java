@@ -29,7 +29,7 @@ class Queen extends Piece{
 		int difJ = j1 - j0;
 		
 		
-		if ((Board.hasPiece(i1, j1) && (Board.getPiece(i1, j1).colour != this.colour)) 
+		if ((Board.hasPiece(i1, j1) && (Board.getPiece(i1, j1).getColour() != this.colour)) 
 		    || !Board.hasPiece(i1, j1))
 		{if (i0 == i1){
 			if (j1 > j0){

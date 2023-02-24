@@ -1,6 +1,6 @@
 package chess;
 
-class Bishop extends Piece{
+public class Bishop extends Piece{
 	private PieceColour colour;
 	private String symbol;
 
@@ -30,7 +30,7 @@ class Bishop extends Piece{
 
 
 
-		if ((Board.hasPiece(i1, j1) && (Board.getPiece(i1, j1).colour != this.colour)) 
+		if ((Board.hasPiece(i1, j1) && (Board.getPiece(i1, j1).getColour() != this.colour)) 
 		    || !Board.hasPiece(i1, j1))
 
 		{if (difI > 0){
